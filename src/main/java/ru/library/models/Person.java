@@ -11,8 +11,9 @@ public class Person {
     @NotEmpty(message = "Поле \"ФИО\" не должно быть пустым")
     @Pattern(regexp = "[A-Z]\\w+, [A-Z]\\w+ [A-Z]\\w+",
             message = "Введите ФИО в формате: Фамилия, Имя Отчество")
-    @Size(message = "Поле \"ФИО\" от 2 до 100 символов")
+    @Size(min = 2, max =100 , message = "Поле \"ФИО\" от 2 до 100 символов")
     private String fullName;
+
     @Min( value = 1900, message = "Поле \"Год рождения\" должен быть больше, чем 1900")
     private int birthYear;
 

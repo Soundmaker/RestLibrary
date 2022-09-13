@@ -41,4 +41,8 @@ public class PersonDAO {
     public Optional<Object> getPersonByFullName(String fullName) {
         return null;
     }
+
+    public Object getBooksByPersonId(int id) {
+        return null;
+    }
 }

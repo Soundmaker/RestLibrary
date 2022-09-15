@@ -41,8 +41,8 @@ public class PersonDAO {
         jdbcTemplate.update("DELETE FROM person WHERE id=?", id);
     }
 
-    public Optional<Person> getPersonByFullName(int id) {
-        return jdbcTemplate.query("SELECT * FROM Person WHERE year_of_birth=?", new Object[]{id},
+    public Optional<Person> getPersonByFullName(String fullName) {
+        return jdbcTemplate.query("SELECT * FROM Person WHERE year_of_birth=?", new Object[]{fullName},
                 new BeanPropertyRowMapper<>(Person.class)).stream().findAny();
     }
 

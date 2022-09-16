@@ -15,11 +15,11 @@ public class Person {
     private String fullName;
 
     @Min( value = 1900, message = "Поле \"Год рождения\" должен быть больше, чем 1900")
-    private int birthYear;
+    private int yearOfBirth;
 
-    public Person(String fullName, int birthYear) {
+    public Person(String fullName, int yearOfBirth) {
         this.fullName = fullName;
-        this.birthYear = birthYear;
+        this.yearOfBirth = yearOfBirth;
     }
 
     public Person() {
@@ -33,12 +33,12 @@ public class Person {
         this.fullName = fullName;
     }
 
-    public int getBirthYear() {
-        return birthYear;
+    public int getYearOfBirth() {
+        return yearOfBirth;
     }
 
-    public void setBirthYear(int birthYear) {
-        this.birthYear = birthYear;
+    public void setYearOfBirth(int yearOfBirth) {
+        this.yearOfBirth = yearOfBirth;
     }
 
     public int getId() {

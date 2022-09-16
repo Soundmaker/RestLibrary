@@ -1,0 +1,9 @@
+ru\library\config\SpringMvcDispatcherInitializer.class
+ru\library\controllers\PeopleController.class
+ru\library\models\Book.class
+ru\library\config\SpringConfig.class
+ru\library\dao\PersonDAO.class
+ru\library\controllers\BooksController.class
+ru\library\util\PersonValidator.class
+ru\library\models\Person.class
+ru\library\dao\BookDAO.class

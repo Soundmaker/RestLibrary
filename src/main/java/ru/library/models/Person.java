@@ -9,8 +9,6 @@ public class Person {
     private int id;
 
     @NotEmpty(message = "Поле \"ФИО\" не должно быть пустым")
-    @Pattern(regexp = "[A-Z]\\w+, [A-Z]\\w+ [A-Z]\\w+",
-            message = "Введите ФИО в формате: Фамилия, Имя Отчество")
     @Size(min = 2, max =100 , message = "Поле \"ФИО\" от 2 до 100 символов")
     private String fullName;
 

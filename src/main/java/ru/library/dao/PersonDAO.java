@@ -42,7 +42,7 @@ public class PersonDAO {
     }
 
     public Optional<Person> getPersonByFullName(String fullName) {
-        return jdbcTemplate.query("SELECT * FROM Person WHERE year_of_birth=?", new Object[]{fullName},
+        return jdbcTemplate.query("SELECT * FROM Person WHERE full_name=?", new Object[]{fullName},
                 new BeanPropertyRowMapper<>(Person.class)).stream().findAny();
     }
 

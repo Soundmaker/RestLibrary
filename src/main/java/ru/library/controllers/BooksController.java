@@ -9,7 +9,6 @@ import ru.library.dao.BookDAO;
 import ru.library.dao.PersonDAO;
 import ru.library.models.Book;
 import ru.library.models.Person;
-import ru.library.util.PersonValidator;
 
 import javax.validation.Valid;
 import java.util.Optional;
@@ -28,7 +27,7 @@ public class BooksController {
 
     @GetMapping()
     public String index(Model model) {
-        model.addAttribute(bookDAO.index());
+        model.addAttribute("books",bookDAO.index());
         return "books/index";
     }
 
@@ -51,7 +50,7 @@ public class BooksController {
         return "books/new";
     }
 
-    @PostMapping("/new")
+    @PostMapping()
     public String create(@ModelAttribute("book") @Valid Book book, BindingResult bindingResult) {
         if (bindingResult.hasErrors()) {
             return "books/new";
@@ -67,13 +66,13 @@ public class BooksController {
     }
 
 
-    @PatchMapping("/id")
+    @PatchMapping("/{id}")
     public String update(@ModelAttribute("book") @Valid Book book, BindingResult bindingResult, @PathVariable("id") int id) {
         if (bindingResult.hasErrors())
             return "books/edit";
 
         bookDAO.update(id, book);
-        return "redirect;/books";
+        return "redirect:/books";
     }
 
     @DeleteMapping("/{id}")
@@ -85,13 +84,13 @@ public class BooksController {
     @PatchMapping("/{id}/release")
     public String release(@PathVariable("id") int id) {
         bookDAO.release(id);
-        return "redirect:books/" + id;
+        return "redirect:/books/" + id;
     }
 
     @PatchMapping("/{id}/assign")
     public String assign(@PathVariable("id") int id, @ModelAttribute("person") Person selectedPerson) {
         bookDAO.assign(id,selectedPerson);
-        return "redirect:books/" + id;
+        return "redirect:/books/" + id;
     }
 }
 

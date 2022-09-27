@@ -9,90 +9,23 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="480da729-b2f1-4548-90a5-51e3e7ed2a32" name="Changes" comment="Refactoring">
-      <change beforePath="$PROJECT_DIR$/.idea/.gitignore" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/artifacts/RestLibrary_war_exploded.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/dataSources.local.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/dataSources.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/dataSources/1a2492c7-9c83-40e4-a129-1cdb5691b9e4.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/dataSources/1a2492c7-9c83-40e4-a129-1cdb5691b9e4/storage_v2/_src_/database/library_project.lSuhCQ.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/dataSources/1a2492c7-9c83-40e4-a129-1cdb5691b9e4/storage_v2/_src_/database/library_project.lSuhCQ/schema/information_schema.FNRwLQ.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/dataSources/1a2492c7-9c83-40e4-a129-1cdb5691b9e4/storage_v2/_src_/database/library_project.lSuhCQ/schema/pg_catalog.0S1ZNQ.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/dataSources/1a2492c7-9c83-40e4-a129-1cdb5691b9e4/storage_v2/_src_/database/library_project.lSuhCQ/schema/public.abK9xQ.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/encodings.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/jarRepositories.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/sqldialects.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/uiDesigner.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/RestLibrary.iml" beforeDir="false" afterPath="$PROJECT_DIR$/RestLibrary.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/RestLibrary_Web_exploded/META-INF/MANIFEST.MF" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/RestLibrary_Web_exploded/WEB-INF/classes/ru/library/config/SpringConfig.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/RestLibrary_Web_exploded/WEB-INF/classes/ru/library/config/SpringMvcDispatcherInitializer.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/RestLibrary_Web_exploded/WEB-INF/classes/ru/library/controllers/BooksController.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/RestLibrary_Web_exploded/WEB-INF/classes/ru/library/controllers/PeopleController.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/RestLibrary_Web_exploded/WEB-INF/classes/ru/library/dao/BookDAO.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/RestLibrary_Web_exploded/WEB-INF/classes/ru/library/dao/PersonDAO.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/RestLibrary_Web_exploded/WEB-INF/classes/ru/library/models/Book.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/RestLibrary_Web_exploded/WEB-INF/classes/ru/library/models/Person.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/RestLibrary_Web_exploded/WEB-INF/classes/ru/library/util/PersonValidator.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/RestLibrary_Web_exploded/WEB-INF/web.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/RestLibrary_war_exploded/META-INF/MANIFEST.MF" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/RestLibrary_war_exploded/WEB-INF/classes/ru/library/config/SpringConfig.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/RestLibrary_war_exploded/WEB-INF/classes/ru/library/config/SpringMvcDispatcherInitializer.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/RestLibrary_war_exploded/WEB-INF/classes/ru/library/controllers/BooksController.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/RestLibrary_war_exploded/WEB-INF/classes/ru/library/controllers/PeopleController.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/RestLibrary_war_exploded/WEB-INF/classes/ru/library/dao/BookDAO.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/RestLibrary_war_exploded/WEB-INF/classes/ru/library/dao/PersonDAO.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/RestLibrary_war_exploded/WEB-INF/classes/ru/library/models/Book.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/RestLibrary_war_exploded/WEB-INF/classes/ru/library/models/Person.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/RestLibrary_war_exploded/WEB-INF/classes/ru/library/util/PersonValidator.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/RestLibrary_war_exploded/WEB-INF/lib/attoparser-2.0.5.RELEASE.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/RestLibrary_war_exploded/WEB-INF/lib/checker-qual-3.5.0.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/RestLibrary_war_exploded/WEB-INF/lib/classmate-1.3.4.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/RestLibrary_war_exploded/WEB-INF/lib/hibernate-validator-6.1.6.Final.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/RestLibrary_war_exploded/WEB-INF/lib/jakarta.validation-api-2.0.2.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/RestLibrary_war_exploded/WEB-INF/lib/jboss-logging-3.3.2.Final.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/RestLibrary_war_exploded/WEB-INF/lib/postgresql-42.5.0.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/RestLibrary_war_exploded/WEB-INF/lib/slf4j-api-1.7.32.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/RestLibrary_war_exploded/WEB-INF/lib/spring-aop-5.3.22.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/RestLibrary_war_exploded/WEB-INF/lib/spring-beans-5.3.22.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/RestLibrary_war_exploded/WEB-INF/lib/spring-context-5.3.22.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/RestLibrary_war_exploded/WEB-INF/lib/spring-core-5.3.22.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/RestLibrary_war_exploded/WEB-INF/lib/spring-expression-5.3.22.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/RestLibrary_war_exploded/WEB-INF/lib/spring-jcl-5.3.22.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/RestLibrary_war_exploded/WEB-INF/lib/spring-jdbc-5.3.22.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/RestLibrary_war_exploded/WEB-INF/lib/spring-tx-5.3.22.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/RestLibrary_war_exploded/WEB-INF/lib/spring-web-5.3.22.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/RestLibrary_war_exploded/WEB-INF/lib/spring-webmvc-5.3.22.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/RestLibrary_war_exploded/WEB-INF/lib/thymeleaf-3.1.0.M2.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/RestLibrary_war_exploded/WEB-INF/lib/thymeleaf-spring5-3.1.0.M2.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/RestLibrary_war_exploded/WEB-INF/lib/unbescape-1.1.6.RELEASE.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/RestLibrary_war_exploded/WEB-INF/views/people/index.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/RestLibrary_war_exploded/WEB-INF/web.xml" beforeDir="false" />
+    <list default="true" id="480da729-b2f1-4548-90a5-51e3e7ed2a32" name="Changes" comment="Add DataJPA +">
+      <change afterPath="$PROJECT_DIR$/src/main/java/ru/library/repositories/BooksRepository.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/ru/library/repositories/PeopleRepository.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/ru/library/services/BooksService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/ru/library/services/PeopleService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/hibernate.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/RestLibrary.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/ru/library/config/SpringConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ru/library/config/SpringConfig.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/ru/library/controllers/BooksController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ru/library/controllers/BooksController.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/ru/library/controllers/PeopleController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ru/library/controllers/PeopleController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/ru/library/dao/BookDAO.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ru/library/dao/BookDAO.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/ru/library/dao/PersonDAO.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ru/library/dao/PersonDAO.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/ru/library/dao/BookDAO.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/ru/library/dao/PersonDAO.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/ru/library/models/Book.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ru/library/models/Book.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/ru/library/models/Person.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ru/library/models/Person.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/web/WEB-INF/views/books/edit.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/books/edit.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/web/WEB-INF/views/books/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/books/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/web/WEB-INF/views/books/new.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/books/new.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/web/WEB-INF/views/books/show.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/books/show.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/web/WEB-INF/views/people/edit.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/people/edit.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/web/WEB-INF/views/people/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/people/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/web/WEB-INF/views/people/new.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/people/new.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/web/WEB-INF/views/people/show.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/people/show.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/web/WEB-INF/web.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/RestLibrary-1.0-SNAPSHOT.jar" beforeDir="false" afterPath="$PROJECT_DIR$/target/RestLibrary-1.0-SNAPSHOT.jar" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/ru/library/controllers/BooksController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/ru/library/controllers/BooksController.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/ru/library/controllers/PeopleController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/ru/library/controllers/PeopleController.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/ru/library/dao/BookDAO.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/ru/library/dao/BookDAO.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/ru/library/dao/PersonDAO.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/ru/library/dao/PersonDAO.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/ru/library/models/Person.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/ru/library/models/Person.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/maven-archiver/pom.properties" beforeDir="false" afterPath="$PROJECT_DIR$/target/maven-archiver/pom.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/ru/library/util/PersonValidator.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ru/library/util/PersonValidator.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -102,8 +35,9 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
-        <option value="Class" />
         <option value="HTML File" />
+        <option value="Interface" />
+        <option value="Class" />
       </list>
     </option>
   </component>
@@ -121,6 +55,13 @@
   <component name="MarkdownSettingsMigration">
     <option name="stateVersion" value="1" />
   </component>
+  <component name="MavenImportPreferences">
+    <option name="generalSettings">
+      <MavenGeneralSettings>
+        <option name="useMavenConfig" value="true" />
+      </MavenGeneralSettings>
+    </option>
+  </component>
   <component name="ProjectId" id="2Efp1Z4iBvGNgQnGnn1Wk29rY1H" />
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectViewState">
@@ -129,26 +70,26 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "DefaultHtmlFileTemplate": "HTML File",
-    "RunOnceActivity.OpenProjectViewOnStart": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "WebServerToolWindowFactoryState": "false",
-    "last_opened_file_path": "C:/Users/sound/RestLibrary/src/main/webapp",
-    "project.structure.last.edited": "Artifacts",
-    "project.structure.proportion": "0.1515625",
-    "project.structure.side.proportion": "0.2",
-    "service.view.auto.scroll.to.source": "true",
-    "settings.editor.selected.configurable": "MavenSettings",
-    "spring.configuration.checksum": "7c103817d47b5ed2537f4223829f7779"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;DefaultHtmlFileTemplate&quot;: &quot;HTML File&quot;,
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
+    &quot;last_opened_file_path&quot;: &quot;C:/Users/sound/RestLibrary/src/main/webapp&quot;,
+    &quot;project.structure.last.edited&quot;: &quot;Artifacts&quot;,
+    &quot;project.structure.proportion&quot;: &quot;0.1515625&quot;,
+    &quot;project.structure.side.proportion&quot;: &quot;0.2&quot;,
+    &quot;service.view.auto.scroll.to.source&quot;: &quot;true&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;MavenSettings&quot;,
+    &quot;spring.configuration.checksum&quot;: &quot;7c103817d47b5ed2537f4223829f7779&quot;
   },
-  "keyToStringList": {
-    "DatabaseDriversLRU": [
-      "postgresql"
+  &quot;keyToStringList&quot;: {
+    &quot;DatabaseDriversLRU&quot;: [
+      &quot;postgresql&quot;
     ]
   }
-}]]></component>
+}</component>
   <component name="RecentsManager">
     <key name="CreateClassDialog.RecentsKey">
       <recent name="ru.library.util" />
@@ -166,6 +107,17 @@
     </key>
   </component>
   <component name="RunManager">
+    <configuration default="true" type="JetRunConfigurationType">
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration default="true" type="KotlinStandaloneScriptRunConfigurationType">
+      <option name="filePath" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="Tomcat 8.5" type="#com.intellij.j2ee.web.tomcat.TomcatRunConfigurationFactory" factoryName="Local" APPLICATION_SERVER_NAME="Tomcat 8.5" ALTERNATIVE_JRE_ENABLED="false" nameIsGenerated="true">
       <option name="UPDATING_POLICY" value="restart-server" />
       <deployment>
@@ -268,7 +220,10 @@
       <workItem from="1663089098178" duration="91000" />
       <workItem from="1663147377419" duration="5340000" />
       <workItem from="1663268655265" duration="8323000" />
-      <workItem from="1663321240583" duration="14420000" />
+      <workItem from="1663321240583" duration="15363000" />
+      <workItem from="1663403437701" duration="163000" />
+      <workItem from="1663403807114" duration="851000" />
+      <workItem from="1664283583683" duration="3028000" />
     </task>
     <task id="LOCAL-00001" summary="Init Project">
       <created>1662996693558</created>
@@ -389,7 +344,21 @@
       <option name="project" value="LOCAL" />
       <updated>1663335684415</updated>
     </task>
-    <option name="localTasksCounter" value="18" />
+    <task id="LOCAL-00018" summary="Fix bugs and recompile">
+      <created>1663342515907</created>
+      <option name="number" value="00018" />
+      <option name="presentableId" value="LOCAL-00018" />
+      <option name="project" value="LOCAL" />
+      <updated>1663342515907</updated>
+    </task>
+    <task id="LOCAL-00019" summary="Fix bugs and recompile">
+      <created>1663342567048</created>
+      <option name="number" value="00019" />
+      <option name="presentableId" value="LOCAL-00019" />
+      <option name="project" value="LOCAL" />
+      <updated>1663342567048</updated>
+    </task>
+    <option name="localTasksCounter" value="20" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -421,6 +390,7 @@
     <MESSAGE value="update book view" />
     <MESSAGE value="Update book view" />
     <MESSAGE value="Refactoring" />
-    <option name="LAST_COMMIT_MESSAGE" value="Refactoring" />
+    <MESSAGE value="Fix bugs and recompile" />
+    <option name="LAST_COMMIT_MESSAGE" value="Fix bugs and recompile" />
   </component>
 </project>

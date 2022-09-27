@@ -5,10 +5,10 @@ import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
 import org.springframework.validation.BindingResult;
 import org.springframework.web.bind.annotation.*;
-import ru.library.dao.BookDAO;
-import ru.library.dao.PersonDAO;
 import ru.library.models.Book;
 import ru.library.models.Person;
+import ru.library.services.BooksService;
+import ru.library.services.PeopleService;
 
 import javax.validation.Valid;
 import java.util.Optional;
@@ -16,18 +16,19 @@ import java.util.Optional;
 @Controller
 @RequestMapping("/books")
 public class BooksController {
-    private BookDAO bookDAO;
-    private PersonDAO personDAO;
+
+    private final PeopleService peopleService;
+    private final BooksService booksService;
 
     @Autowired
-    public BooksController(BookDAO bookDAO, PersonDAO personDAO) {
-        this.bookDAO = bookDAO;
-        this.personDAO = personDAO;
+    public BooksController(PeopleService peopleService, BooksService booksService) {
+        this.peopleService = peopleService;
+        this.booksService = booksService;
     }
 
     @GetMapping()
     public String index(Model model) {
-        model.addAttribute("books",bookDAO.index());
+        model.addAttribute("books", );
         return "books/index";
     }
 
@@ -89,7 +90,7 @@ public class BooksController {
 
     @PatchMapping("/{id}/assign")
     public String assign(@PathVariable("id") int id, @ModelAttribute("person") Person selectedPerson) {
-        bookDAO.assign(id,selectedPerson);
+        bookDAO.assign(id, selectedPerson);
         return "redirect:/books/" + id;
     }
 }

@@ -3,15 +3,7 @@
   <database-model serializer="dbm" dbms="POSTGRES" family-id="POSTGRES" format-version="4.38">
     <root id="1">
       <DateStyle>dmy</DateStyle>
-      <Grants>1||-9223372036854775808|c|G
-1||10|c|G
-1||10|C|G
-1||10|T|G
-13753||-9223372036854775808|c|G
-13753||10|c|G
-13753||10|C|G
-13753||10|T|G</Grants>
-      <IntrospectionStateNumber>2462</IntrospectionStateNumber>
+      <IntrospectionStateNumber>2483</IntrospectionStateNumber>
       <ServerVersion>14.5</ServerVersion>
       <StartupTime>1663316873</StartupTime>
       <TimeZones>true ACDT
@@ -816,7 +808,7 @@ false Zulu
 13388||10|C|G
 13388||-9223372036854775808|U|G
 13388||10|U|G</Grants>
-      <IntrospectionStateNumber>2463</IntrospectionStateNumber>
+      <IntrospectionStateNumber>2484</IntrospectionStateNumber>
       <ObjectId>24593</ObjectId>
       <Relations>sequence|table|24605|24606|1
 sequence|table|24613|24614|1
@@ -4245,7 +4237,7 @@ sequence|table|24613|24614|1
     <schema id="264" parent="4" name="public">
       <Comment>standard public schema</Comment>
       <Current>1</Current>
-      <IntrospectionStateNumber>2463</IntrospectionStateNumber>
+      <IntrospectionStateNumber>2484</IntrospectionStateNumber>
       <ObjectId>2200</ObjectId>
       <StateNumber>527</StateNumber>
       <OwnerName>postgres</OwnerName>
@@ -4264,13 +4256,13 @@ sequence|table|24613|24614|1
     </sequence>
     <table id="267" parent="264" name="book">
       <ObjectId>24614</ObjectId>
-      <StateNumber>2095</StateNumber>
+      <StateNumber>2481</StateNumber>
       <AccessMethodId>2</AccessMethodId>
       <OwnerName>postgres</OwnerName>
     </table>
     <table id="268" parent="264" name="person">
       <ObjectId>24606</ObjectId>
-      <StateNumber>2095</StateNumber>
+      <StateNumber>2465</StateNumber>
       <AccessMethodId>2</AccessMethodId>
       <OwnerName>postgres</OwnerName>
     </table>
@@ -4309,7 +4301,13 @@ sequence|table|24613|24614|1
       <StateNumber>2095</StateNumber>
       <TypeId>23</TypeId>
     </column>
-    <foreign-key id="274" parent="267" name="book_person_id_fkey">
+    <column id="274" parent="267" name="taken_at">
+      <DataType>timestamp|0s</DataType>
+      <Position>7</Position>
+      <StateNumber>2481</StateNumber>
+      <TypeId>1114</TypeId>
+    </column>
+    <foreign-key id="275" parent="267" name="book_person_id_fkey">
       <ColNames>person_id</ColNames>
       <NameSurrogate>1</NameSurrogate>
       <ObjectId>24619</ObjectId>
@@ -4322,7 +4320,7 @@ sequence|table|24613|24614|1
       <RefTableName>person</RefTableName>
       <RefTableKind>table</RefTableKind>
     </foreign-key>
-    <index id="275" parent="267" name="book_pkey">
+    <index id="276" parent="267" name="book_pkey">
       <ColNames>id</ColNames>
       <NameSurrogate>1</NameSurrogate>
       <ObjectId>24617</ObjectId>
@@ -4331,7 +4329,7 @@ sequence|table|24613|24614|1
       <Unique>1</Unique>
       <AccessMethodId>403</AccessMethodId>
     </index>
-    <key id="276" parent="267" name="book_pkey">
+    <key id="277" parent="267" name="book_pkey">
       <ColNames>id</ColNames>
       <NameSurrogate>1</NameSurrogate>
       <ObjectId>24618</ObjectId>
@@ -4339,7 +4337,7 @@ sequence|table|24613|24614|1
       <StateNumber>2095</StateNumber>
       <UnderlyingIndexId>24617</UnderlyingIndexId>
     </key>
-    <column id="277" parent="268" name="id">
+    <column id="278" parent="268" name="id">
       <DataType>integer|0s</DataType>
       <IdentityKind>by-default</IdentityKind>
       <NotNull>1</NotNull>
@@ -4347,21 +4345,21 @@ sequence|table|24613|24614|1
       <StateNumber>2094</StateNumber>
       <TypeId>23</TypeId>
     </column>
-    <column id="278" parent="268" name="full_name">
+    <column id="279" parent="268" name="full_name">
       <DataType>varchar(100)|0s</DataType>
       <NotNull>1</NotNull>
       <Position>2</Position>
       <StateNumber>2094</StateNumber>
       <TypeId>1043</TypeId>
     </column>
-    <column id="279" parent="268" name="year_of_birth">
+    <column id="280" parent="268" name="year_of_birth">
       <DataType>integer|0s</DataType>
       <NotNull>1</NotNull>
       <Position>3</Position>
       <StateNumber>2094</StateNumber>
       <TypeId>23</TypeId>
     </column>
-    <index id="280" parent="268" name="person_pkey">
+    <index id="281" parent="268" name="person_pkey">
       <ColNames>id</ColNames>
       <NameSurrogate>1</NameSurrogate>
       <ObjectId>24609</ObjectId>
@@ -4370,7 +4368,7 @@ sequence|table|24613|24614|1
       <Unique>1</Unique>
       <AccessMethodId>403</AccessMethodId>
     </index>
-    <index id="281" parent="268" name="person_full_name_key">
+    <index id="282" parent="268" name="person_full_name_key">
       <ColNames>full_name</ColNames>
       <NameSurrogate>1</NameSurrogate>
       <ObjectId>24611</ObjectId>
@@ -4381,7 +4379,7 @@ sequence|table|24613|24614|1
       <CollationIds>100</CollationIds>
       <CollationParentNames>pg_catalog</CollationParentNames>
     </index>
-    <key id="282" parent="268" name="person_pkey">
+    <key id="283" parent="268" name="person_pkey">
       <ColNames>id</ColNames>
       <NameSurrogate>1</NameSurrogate>
       <ObjectId>24610</ObjectId>
@@ -4389,7 +4387,7 @@ sequence|table|24613|24614|1
       <StateNumber>2094</StateNumber>
       <UnderlyingIndexId>24609</UnderlyingIndexId>
     </key>
-    <key id="283" parent="268" name="person_full_name_key">
+    <key id="284" parent="268" name="person_full_name_key">
       <ColNames>full_name</ColNames>
       <NameSurrogate>1</NameSurrogate>
       <ObjectId>24612</ObjectId>

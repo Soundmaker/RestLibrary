@@ -1,11 +1,15 @@
 package ru.library.services;
 
+import org.hibernate.Hibernate;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 import org.springframework.transaction.annotation.Transactional;
+import ru.library.models.Book;
 import ru.library.models.Person;
 import ru.library.repositories.PeopleRepository;
 
+import java.util.Collections;
+import java.util.Date;
 import java.util.List;
 import java.util.Optional;
 
@@ -28,17 +32,13 @@ public class PeopleService {
         return foundPerson.orElse(null);
     }
 
-    public Person findByFullName(String fullName) {
-        return peopleRepository.findPersonByFullName(fullName);
-    }
-
     @Transactional
-    public void save(Person person) {
+    public void save (Person person) {
         peopleRepository.save(person);
     }
 
     @Transactional
-    public void update(int id, Person updatedPerson) {
+    public void update (int id, Person updatedPerson) {
         updatedPerson.setId(id);
         peopleRepository.save(updatedPerson);
     }
@@ -46,5 +46,28 @@ public class PeopleService {
     @Transactional
     public void delete(int id) {
         peopleRepository.deleteById(id);
+    }
+
+    public Optional<Person> getPersonByFullName(String fullName) {
+        return peopleRepository.findByFullName(fullName);
+    }
+
+    public List<Book> getBooksByPersonId(int id) {
+        Optional<Person> person = peopleRepository.findById(id);
+
+        if (person.isPresent()) {
+            Hibernate.initialize(person.get().getBooks());
+            person.get().getBooks().forEach(book -> {
+                long diffInMillis = Math.abs(book.getTakenAt().getTime() - new Date().getTime());
+                // 864000000 milliseconds = 10 days
+                if (diffInMillis > 864000000) {
+                    book.setExpired(true);
+                }
+            });
+            return person.get().getBooks();
+        }
+        else {
+            return Collections.emptyList();
+        }
     }
 }

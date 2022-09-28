@@ -10,7 +10,7 @@
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel>
-      <module name="RestLibrary" target="18" />
+      <module name="RestLibrary" target="1.8" />
     </bytecodeTargetLevel>
   </component>
 </project>
